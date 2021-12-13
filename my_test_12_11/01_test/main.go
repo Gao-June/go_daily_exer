@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+var x = 0x12
+
 func main() {
-	fmt.Println("hello world!")
+	var y int = x
+	//y = x
+	
+	fmt.Println(y, "  ", x)
+	
 }
