@@ -1,5 +1,5 @@
 /*
-	书上的示例
+	书上的示例, http 简单使用
 */
 
 package main

@@ -6,8 +6,8 @@ package main
 
 import "fmt"
 
-func main( ){
+func main() {
 	str := `abc/n/t`
 
-	fmt.Println(str)
+	fmt.Println(str) // abc/n/t
 }

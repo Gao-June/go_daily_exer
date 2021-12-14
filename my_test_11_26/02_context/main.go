@@ -1,3 +1,7 @@
+/*
+	sync.WaitGroup 练习
+*/
+
 package main
 
 import (

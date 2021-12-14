@@ -1,6 +1,84 @@
 
+## 2021.11.26  
+>### 01 context 01  
+    sync.WaitGroup 练习  
 
-## 2021.12.13  
+>### 02 context  
+    sync.WaitGroup 练习  
+>### 03 context  
+    chan 练习
+
+## 2021.11.27  
+>### 01 kafka  
+    基于sarama第三方库开发的kafka client（代码有问题）
+
+>### 02 kafka consumer  
+    kafka 练习（代码有问题）
+
+>### 02 m  
+    hello world  
+
+## 2021.11.28
+>### 01 load fun test  
+>> Fun_sum  
+    **Fun_sum.go**  
+    自定义库  
+**main.go**  
+    主函数
+
+>### 02 slice  
+    slice 练习
+
+## 2021.11.29
+>### 01 slice  
+    切片是 引用类型
+
+>### 02 struct  
+    结构体 声明
+	推荐使用方法-3
+
+>### 03 curl  
+    书上的示例, http 简单使用
+
+>### 04 interface  
+    练习 接口
+
+>### 05 goroutine  
+    使用 goroutine 并发
+
+>### 06 chan
+    练习使用 管道 channel
+	无缓冲 channel
+
+>### 07 goroutine chan  
+    并发在 无缓冲管道 读取值（任务）
+
+>### 08 goroutine chans
+    并发在 带缓冲管道 读取值（任务）
+
+
+## 2021.11.30
+>### no1_runner  
+>>**main.go**  
+    这个实例程序演示如何使用通道来监视
+	程序运行的时间，以及程序运行时间过长时 如何终止程序
+>>runner  
+**runner.go**  
+    runner 扩展包
+	本项目用于展示 如何使用通道来监视程序的执行时间，如果程序运行时间太长，也可以用 runner 来终止
+
+>### no2
+>>**main.go**  
+    函数调用练习
+>>ppl  
+**ppl.go**  
+    自定义库
+
+## 2021.12.11
+>### 01 test  
+    简单 test
+
+## 2021.12.14  
 >### 01 struct
     练习使用 struct 的几种常用方式
 >### 02 error  
