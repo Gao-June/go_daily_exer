@@ -19,7 +19,9 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	nums := []int{10, 20, 30, 40, 50, 60, 70}
@@ -28,4 +30,6 @@ func main() {
 		fmt.Println("i : ", i, "  num: ", num)
 		fmt.Println("&i : ", &i, "  &num: ", &num)
 	}
+
+	
 }
