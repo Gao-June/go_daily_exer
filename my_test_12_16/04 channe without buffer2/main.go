@@ -5,6 +5,9 @@
 
 	可以，并不是要 for 无限循环
 	重点是需要 Sleep()
+
+	-- update
+	其实这里可以用 defer 的呀，这样就可以处理 close() 关闭不及时的问题了
 */
 
 package main
