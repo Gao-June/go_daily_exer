@@ -103,3 +103,8 @@
 
 >### 03 channel without buffer
     写一个无缓冲的 channel
+
+>### 04 channel without buffer  
+    再试着写一次 goroutine + channel without buffer  
+	上一个测试代码是用了 for 无限循环来时间 channel通信的，这次直接看看  
+	可以，并不是要 for 无限循环！  
