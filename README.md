@@ -97,3 +97,6 @@
 ## 2021.12.26  
 >### 01 sync + go  
     写一个 go 协程， 用 sync 做同步
+
+>### 02 channel with buffer  
+    写一个有缓冲 channel
