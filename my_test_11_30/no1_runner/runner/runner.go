@@ -80,7 +80,7 @@ func (r *Runner) run() error {
 		}
 
 		// 执行已注册的任务
-		task(id)
+		task(id + 1)
 	}
 
 	return nil

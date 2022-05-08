@@ -6,10 +6,11 @@
 package main
 
 import (
-	"code_test/code_exercise/my_test_11_30/no1_runner/runner"
 	"log"
 	"os"
 	"time"
+
+	runner "my_owner_src/runner"
 )
 
 // timeout 规定了必须在多少秒内处理完成
