@@ -25,4 +25,8 @@ func main() {
 
 	c = sub_nums
 	fmt.Println(c(1, 2))
+
+	// 也能直接做类型推导
+	d := add_nums
+	fmt.Println(d(100, 200))
 }
