@@ -15,7 +15,7 @@ type person struct {
 
 // 这里的传参必须是指针类型， 不然修改操作只是针对副本，无法修改接收者变量本身。
 func (p *person) set_age(age int) {
-	p.age = 18
+	p.age = age
 	fmt.Println(p)
 }
 
