@@ -1,3 +1,3 @@
-module code_test/code_exercise
+module go_daily_exer
 
 go 1.17
