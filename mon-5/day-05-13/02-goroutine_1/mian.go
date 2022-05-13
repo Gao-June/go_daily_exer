@@ -1,5 +1,5 @@
-/*
-	练习使用 goroutine, 及 sync.WaitGroup
+﻿/*
+	练习 goroutine, 练习 sync.WaitGroup
 */
 
 package main
@@ -9,7 +9,7 @@ import (
 	"sync"
 )
 
-var wg sync.WaitGroup // 自定义
+var wg sync.WaitGroup
 
 func Hello(count int) {
 	defer wg.Done() // defer add - 1
@@ -22,5 +22,5 @@ func main() {
 		go Hello(i)
 	}
 
-	wg.Wait() // 执行阻塞，直到所有的WaitGroup数量变成0
+	wg.Wait()
 }
