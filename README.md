@@ -138,3 +138,4 @@
 ## 2022.05.13
 >### 练习调用 自定义库
 >### 练习使用 goroutine, 及 sync.WaitGroup
+>### 练习管道 channel
