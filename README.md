@@ -139,3 +139,4 @@
 >### 练习调用 自定义库
 >### 练习使用 goroutine, 及 sync.WaitGroup
 >### 练习管道 channel
+>### 用 for range 循环读取 channel里的数
