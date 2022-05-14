@@ -1,19 +1,19 @@
 
 ## 2021.11.26  
 >### 01 context 01  
-    sync.WaitGroup Á·Ï°  
+    sync.WaitGroup ç»ƒä¹   
 
 >### 02 context  
-    sync.WaitGroup Á·Ï°  
+    sync.WaitGroup ç»ƒä¹   
 >### 03 context  
-    chan Á·Ï°
+    chan ç»ƒä¹ 
 
 ## 2021.11.27  
 >### 01 kafka  
-    »ùÓÚsaramaµÚÈý·½¿â¿ª·¢µÄkafka client£¨´úÂëÓÐÎÊÌâ£©
+    åŸºäºŽsaramaç¬¬ä¸‰æ–¹åº“å¼€å‘çš„kafka clientï¼ˆä»£ç æœ‰é—®é¢˜ï¼‰
 
 >### 02 kafka consumer  
-    kafka Á·Ï°£¨´úÂëÓÐÎÊÌâ£©
+    kafka ç»ƒä¹ ï¼ˆä»£ç æœ‰é—®é¢˜ï¼‰
 
 >### 02 m  
     hello world  
@@ -22,121 +22,115 @@
 >### 01 load fun test  
 >> Fun_sum  
     **Fun_sum.go**  
-    ×Ô¶¨Òå¿â  
+    è‡ªå®šä¹‰åº“  
 **main.go**  
-    Ö÷º¯Êý
+    ä¸»å‡½æ•°
 
 >### 02 slice  
-    slice Á·Ï°
+    slice ç»ƒä¹ 
 
 ## 2021.11.29
 >### 01 slice  
-    ÇÐÆ¬ÊÇ ÒýÓÃÀàÐÍ
+    åˆ‡ç‰‡æ˜¯ å¼•ç”¨ç±»åž‹
 
 >### 02 struct  
-    ½á¹¹Ìå ÉùÃ÷
-	ÍÆ¼öÊ¹ÓÃ·½·¨-3
+    ç»“æž„ä½“ å£°æ˜Ž
+	æŽ¨èä½¿ç”¨æ–¹æ³•-3
 
 >### 03 curl  
-    ÊéÉÏµÄÊ¾Àý, http ¼òµ¥Ê¹ÓÃ
+    ä¹¦ä¸Šçš„ç¤ºä¾‹, http ç®€å•ä½¿ç”¨
 
 >### 04 interface  
-    Á·Ï° ½Ó¿Ú
+    ç»ƒä¹  æŽ¥å£
 
 >### 05 goroutine  
-    Ê¹ÓÃ goroutine ²¢·¢
+    ä½¿ç”¨ goroutine å¹¶å‘
 
 >### 06 chan
-    Á·Ï°Ê¹ÓÃ ¹ÜµÀ channel
-	ÎÞ»º³å channel
+    ç»ƒä¹ ä½¿ç”¨ ç®¡é“ channel
+	æ— ç¼“å†² channel
 
 >### 07 goroutine chan  
-    ²¢·¢ÔÚ ÎÞ»º³å¹ÜµÀ ¶ÁÈ¡Öµ£¨ÈÎÎñ£©
+    å¹¶å‘åœ¨ æ— ç¼“å†²ç®¡é“ è¯»å–å€¼ï¼ˆä»»åŠ¡ï¼‰
 
 >### 08 goroutine chans
-    ²¢·¢ÔÚ ´ø»º³å¹ÜµÀ ¶ÁÈ¡Öµ£¨ÈÎÎñ£©
+    å¹¶å‘åœ¨ å¸¦ç¼“å†²ç®¡é“ è¯»å–å€¼ï¼ˆä»»åŠ¡ï¼‰
 
 
 ## 2021.11.30
 >### no1_runner  
 >>**main.go**  
-    Õâ¸öÊµÀý³ÌÐòÑÝÊ¾ÈçºÎÊ¹ÓÃÍ¨µÀÀ´¼àÊÓ
-	³ÌÐòÔËÐÐµÄÊ±¼ä£¬ÒÔ¼°³ÌÐòÔËÐÐÊ±¼ä¹ý³¤Ê± ÈçºÎÖÕÖ¹³ÌÐò
+    è¿™ä¸ªå®žä¾‹ç¨‹åºæ¼”ç¤ºå¦‚ä½•ä½¿ç”¨é€šé“æ¥ç›‘è§†
+	ç¨‹åºè¿è¡Œçš„æ—¶é—´ï¼Œä»¥åŠç¨‹åºè¿è¡Œæ—¶é—´è¿‡é•¿æ—¶ å¦‚ä½•ç»ˆæ­¢ç¨‹åº
 >>runner  
 **runner.go**  
-    runner À©Õ¹°ü
-	±¾ÏîÄ¿ÓÃÓÚÕ¹Ê¾ ÈçºÎÊ¹ÓÃÍ¨µÀÀ´¼àÊÓ³ÌÐòµÄÖ´ÐÐÊ±¼ä£¬Èç¹û³ÌÐòÔËÐÐÊ±¼äÌ«³¤£¬Ò²¿ÉÒÔÓÃ runner À´ÖÕÖ¹
+    runner æ‰©å±•åŒ…
+	æœ¬é¡¹ç›®ç”¨äºŽå±•ç¤º å¦‚ä½•ä½¿ç”¨é€šé“æ¥ç›‘è§†ç¨‹åºçš„æ‰§è¡Œæ—¶é—´ï¼Œå¦‚æžœç¨‹åºè¿è¡Œæ—¶é—´å¤ªé•¿ï¼Œä¹Ÿå¯ä»¥ç”¨ runner æ¥ç»ˆæ­¢
 
 >### no2
 >>**main.go**  
-    º¯Êýµ÷ÓÃÁ·Ï°
+    å‡½æ•°è°ƒç”¨ç»ƒä¹ 
 >>ppl  
 **ppl.go**  
-    ×Ô¶¨Òå¿â
+    è‡ªå®šä¹‰åº“
 
 ## 2021.12.11
 >### 01 test  
-    ¼òµ¥ test
+    ç®€å• test
 
 ## 2021.12.14  
 >### 01 struct
-    Á·Ï°Ê¹ÓÃ struct µÄ¼¸ÖÖ³£ÓÃ·½Ê½
+    ç»ƒä¹ ä½¿ç”¨ struct çš„å‡ ç§å¸¸ç”¨æ–¹å¼
 >### 02 error  
-    Á·Ï°Ê¹ÓÃ eerors.New ´´ÔìÐÂµÄ´íÎó
+    ç»ƒä¹ ä½¿ç”¨ eerors.New åˆ›é€ æ–°çš„é”™è¯¯
 >### 03 switch case  
-    ²âÊÔ switch case ÖÐµ¥Ìõ¼þÎª¿ÕµÄÇé¿ö  
-	µ¥Ìõ¼þ£¬ÄÚÈÝÎª¿Õ¡¢ÒþÊ½ ¡° case x==10 : break; ¡±
+    æµ‹è¯• switch case ä¸­å•æ¡ä»¶ä¸ºç©ºçš„æƒ…å†µ  
+	å•æ¡ä»¶ï¼Œå†…å®¹ä¸ºç©ºã€éšå¼ â€œ case x==10 : break; â€
 >### 04 for range  
-    ÎÞÂÛÊÇÆÕÍ¨Ñ­»·£¬»¹ÊÇ rangeµü´ú£¬Æä¶¨ÒåµÄ¾Ö²¿±äÁ¿¶¼»áÖØ¸´Ê¹ÓÃ
+    æ— è®ºæ˜¯æ™®é€šå¾ªçŽ¯ï¼Œè¿˜æ˜¯ rangeè¿­ä»£ï¼Œå…¶å®šä¹‰çš„å±€éƒ¨å˜é‡éƒ½ä¼šé‡å¤ä½¿ç”¨
 
 ## 2021.12.15  
 >### 01 customize library  
-    Ð´ÁËÒ»¸öµ÷ÓÃ ×Ô¶¨Òå¿â µÄ²âÊÔ°¸Àý  
-	ÄÜÕý³£ÔËÐÐ£¬²»¹ý²»ÖªµÀÎªÉ¶ µ÷ÓÃ¿â°ü Sum_func »áÌáÊ¾ÎÊÌâ¡£  
+    å†™äº†ä¸€ä¸ªè°ƒç”¨ è‡ªå®šä¹‰åº“ çš„æµ‹è¯•æ¡ˆä¾‹  
+	èƒ½æ­£å¸¸è¿è¡Œï¼Œä¸è¿‡ä¸çŸ¥é“ä¸ºå•¥ è°ƒç”¨åº“åŒ… Sum_func ä¼šæç¤ºé—®é¢˜ã€‚  
 
 ## 2021.12.26  
 >### 01 sync + go  
-    Ð´Ò»¸ö go Ð­³Ì£¬ ÓÃ sync ×öÍ¬²½
+    å†™ä¸€ä¸ª go åç¨‹ï¼Œ ç”¨ sync åšåŒæ­¥
 
 >### 02 channel with buffer  
-    Ð´Ò»¸öÓÐ»º³å channel
+    å†™ä¸€ä¸ªæœ‰ç¼“å†² channel
 
 >### 03 channel without buffer
-    Ð´Ò»¸öÎÞ»º³åµÄ channel
+    å†™ä¸€ä¸ªæ— ç¼“å†²çš„ channel
 
 >### 04 channel without buffer  
-    ÔÙÊÔ×ÅÐ´Ò»´Î goroutine + channel without buffer  
-	ÉÏÒ»¸ö²âÊÔ´úÂëÊÇÓÃÁË for ÎÞÏÞÑ­»·À´Ê±¼ä channelÍ¨ÐÅµÄ£¬Õâ´ÎÖ±½Ó¿´¿´  
-	¿ÉÒÔ£¬²¢²»ÊÇÒª for ÎÞÏÞÑ­»·£¡  
+    å†è¯•ç€å†™ä¸€æ¬¡ goroutine + channel without buffer  
+	ä¸Šä¸€ä¸ªæµ‹è¯•ä»£ç æ˜¯ç”¨äº† for æ— é™å¾ªçŽ¯æ¥æ—¶é—´ channelé€šä¿¡çš„ï¼Œè¿™æ¬¡ç›´æŽ¥çœ‹çœ‹  
+	å¯ä»¥ï¼Œå¹¶ä¸æ˜¯è¦ for æ— é™å¾ªçŽ¯ï¼  
 
 ## 2022.05.08
->### ÖØÐÂ¼ñÆð hello world
->### Ê¹ÓÃ _ ¿ÉÒÔ±íÊ¾ÄäÃû±äÁ¿
+>### é‡æ–°æ¡èµ· hello world
+>### ä½¿ç”¨ _ å¯ä»¥è¡¨ç¤ºåŒ¿åå˜é‡
 
 
 ## 2022.05.09
->### Á·Ï° for Ñ­»·¡¢Êý×é¡¢for-range¡¢µØÖ·
+>### ç»ƒä¹  for å¾ªçŽ¯ã€æ•°ç»„ã€for-rangeã€åœ°å€
 
 
 ## 2022.05.10
->### Á·Ï°Ê¹ÓÃ¶àÎ¬Êý×é
->### Á·Ï°ÇÐÆ¬¡¢¸´ÖÆ¡¢±éÀú¡¢Ìí¼ÓÔªËØ
->### copy() ¸´ÖÆ
+>### ç»ƒä¹ ä½¿ç”¨å¤šç»´æ•°ç»„
+>### ç»ƒä¹ åˆ‡ç‰‡ã€å¤åˆ¶ã€éåŽ†ã€æ·»åŠ å…ƒç´ 
+>### copy() å¤åˆ¶
 
 ## 2022.05.11
->### golang ÖÐÒ²ÄÜÊµÏÖ  C++ÀïµÄº¯ÊýÖ¸Õë
->### Á·Ï°½á¹¹Ìå
+>### golang ä¸­ä¹Ÿèƒ½å®žçŽ°  C++é‡Œçš„å‡½æ•°æŒ‡é’ˆ
+>### ç»ƒä¹ ç»“æž„ä½“
 
 ## 2022.05.12
->### ·½·¨ºÍ½ÓÊÕÕß
->### scan ¶ÁÈ¡ÊäÈë
->### ½Ó¿Ú
->### °üµÄµ¼Èë
->### °üµÄµ¼Èë
->### ¶ÁÈ¡ÎÄ¼þ
-
-## 2022.05.13
->### Á·Ï°µ÷ÓÃ ×Ô¶¨Òå¿â
->### Á·Ï°Ê¹ÓÃ goroutine, ¼° sync.WaitGroup
->### Á·Ï°¹ÜµÀ channel
->### ÓÃ for range Ñ­»·¶ÁÈ¡ channelÀïµÄÊý
+>### æ–¹æ³•å’ŒæŽ¥æ”¶è€…
+>### scan è¯»å–è¾“å…¥
+>### æŽ¥å£
+>### åŒ…çš„å¯¼å…¥
+>### åŒ…çš„å¯¼å…¥
+>### è¯»å–æ–‡ä»¶
