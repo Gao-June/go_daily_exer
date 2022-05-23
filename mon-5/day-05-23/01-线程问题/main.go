@@ -20,10 +20,13 @@ import (
 )
 
 var a, b int = 0, 0
+var count1, count2 int = 1, 1
 var wg sync.WaitGroup
 
 func Add_nums() {
-	for i := 1; i < 10000; i++ {
+
+	for i := 1; i < 1000000; i++ {
+		count1++
 		a++
 		b++
 	}
@@ -37,9 +40,15 @@ func Is_equal() {
 		b_value = b
 	*/
 
-	if a < b {
-		fmt.Println("a = ", a, "\tb = ", b)
+	// fmt.Println("ok")
+
+	for {
+		count2++
+		if a < b {
+			fmt.Println("a = ", a, "\tb = ", b)
+		}
 	}
+
 }
 
 func main() {
@@ -52,4 +61,5 @@ func main() {
 
 	wg.Wait()
 	fmt.Println("程序结束")
+	fmt.Println("count1 = ", count1, "\tcount2 = ", count2)
 }
