@@ -137,7 +137,7 @@
 
 ## 2022.05.13
 >### 练习调用 自定义库
->### 练习使用 goroutine, 及 sync.WaitGroup
+>### 练习使用 goroutine, 及 sync.WaitGroup 
 >### 练习管道 channel
 >### 用 for range 循环读取 channel里的数
 
@@ -150,3 +150,4 @@
 
 ## 2020.05.24
 >### for-range
+>### 探究 defer 和 return 的顺序
