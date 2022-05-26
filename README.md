@@ -168,3 +168,4 @@
 >### runtime.Goexit()-2  再写一个退出当前协程
 >### 练习使用 tuntime.GOMAXPROCS
 >### 无缓冲 chan
+>### 有缓冲 chan
