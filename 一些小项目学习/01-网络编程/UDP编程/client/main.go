@@ -1,5 +1,7 @@
 /*
-	UDP�ͻ��� client
+	UDP客户端 client
+
+	对代码改了下，可以一直会话（直到用户输入”Q“退出）
 */
 
 package main
@@ -7,6 +9,7 @@ package main
 import (
 	"fmt"
 	"net"
+	"strings"
 )
 
 func main() {
@@ -15,26 +18,38 @@ func main() {
 		Port: 30000,
 	})
 	if err != nil {
-		fmt.Println("���ӷ�����ʧ��, err: ", err)
+		fmt.Println("连接服务器失败, err: ", err)
 		return
 	}
 
 	defer socket.Close()
 
-	sendData := []byte("Hello Server!")
-	_, err = socket.Write(sendData) // ��������
-	if err != nil {
-		fmt.Println("��������ʧ��, err: ", err)
-		return
-	}
+	// 我在这里改一下，让它能够一直通信，直到输入 "Q"才退出
+	for {
+		//sendData := []byte("Hello Server!")
+		// 这里改了一下，改成自定义输入
+		var infomations string
+		fmt.Scan(&infomations)
+		sendData := strings.Trim(infomations, "\r\n")
+		if strings.ToUpper(sendData) == "Q" {
+			fmt.Println("会话结束")
+			return
+		}
 
-	data := make([]byte, 4096)
-	n, remoteAddr, err := socket.ReadFromUDP(data) // ��������
-	if err != nil {
-		fmt.Println("��������ʧ��, err: ", err)
-		return
-	}
+		_, err = socket.Write([]byte(sendData)) // 发送数据
+		if err != nil {
+			fmt.Println("发送数据失败, err: ", err)
+			return
+		}
 
-	fmt.Printf("recv: %v \taddr: %v \t count: %v\n", string(data[:n]), remoteAddr, n)
+		data := make([]byte, 4096)
+		n, remoteAddr, err := socket.ReadFromUDP(data) // 接收数据
+		if err != nil {
+			fmt.Println("接收数据失败, err: ", err)
+			return
+		}
+
+		fmt.Printf("recv: %v \taddr: %v \t count: %v\n", string(data[:n]), remoteAddr, n)
+	}
 
 }

@@ -1,5 +1,5 @@
 /*
-	UDP ·şÎñ¶Ë server
+	UDP æœåŠ¡ç«¯ server
 */
 
 package main
@@ -9,30 +9,30 @@ import (
 	"net"
 )
 
-func main( ){
+func main() {
 	listen, err := net.ListenUDP("udp", &net.UDPAddr{
-		IP: net.IPv4(0, 0, 0, 0),
+		IP:   net.IPv4(0, 0, 0, 0),
 		Port: 30000,
 	})
-	if err != nil{
+	if err != nil {
 		fmt.Println("listen failedm err: ", err)
 		return
 	}
 
 	defer listen.Close()
 
-	// ³ÖĞø¶ÁÈ¡Êı¾İ
-	for{
+	// æŒç»­è¯»å–æ•°æ®
+	for {
 		var data [1024]byte
-		n, addr, err := listen.ReadFromUDP(data[:])	// ½ÓÊÕÊı¾İ
-		if err != nil{
+		n, addr, err := listen.ReadFromUDP(data[:]) // æ¥æ”¶æ•°æ®
+		if err != nil {
 			fmt.Println("read udp failed, err: ", err)
-			continue;
+			continue
 		}
 
-		fmt.Printf("data: %v,\taddr: %v,\tcount: %v\n", string(data[:n]), addr, n)
-		_, err = listen.WriteToUDP(data[:], addr)	// ·¢ËÍÊı¾İ
-		if err != nil{
+		fmt.Printf("data: %v\taddr: %v\tcount: %v\n", string(data[:n]), addr, n)
+		_, err = listen.WriteToUDP(data[:], addr) // å‘é€æ•°æ®
+		if err != nil {
 			fmt.Println("write to udp failed, err: ", err)
 			continue
 		}
