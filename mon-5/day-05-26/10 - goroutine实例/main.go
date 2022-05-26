@@ -32,16 +32,16 @@ type Result struct {
 func createPool(num int, jobChan chan *Job, resultChan chan *Result) {
 	// 根据协程个数 去运行
 	for i := 0; i < num; i++ {
-		go func(jobChan chan *Job, resultChan chan *Result) {
+		go func(jC chan *Job, rC chan *Result) {
 			// 执行运算
 			// 遍历 job 管道所有数据，进行相加
-			for job := range jobChan {
+			for job := range jC {
 				// 随机数接过来
 				r_num := job.RandNum
 
 				// 随机数每一位相加
-				// 定义返回值
-				var sum int
+				// sum 位数求和返回值
+				var sum int = 0
 				for r_num != 0 {
 					tmp := r_num % 10
 					sum += tmp
@@ -54,7 +54,7 @@ func createPool(num int, jobChan chan *Job, resultChan chan *Result) {
 					sum: sum,
 				}
 				// 运算结果 给 chan
-				resultChan <- r
+				rC <- r
 			}
 		}(jobChan, resultChan)
 	}
@@ -80,12 +80,14 @@ func main() {
 	}(resultChan)
 
 	var id int = 0
-	var count int = 20 //只计算100组数据
+	var count int = 20 //只计算 20 组数据
 	// 循环创建 job， 输入到管道
 	for count > 0 {
+		
 		time.Sleep(time.Second) // 不然协程运行20次太快
 		count--
 		id++
+
 		// 生成随机数
 		r_num := rand.Int() // 这里是生成一个非负的数， [0, 2^64)
 		job := &Job{
