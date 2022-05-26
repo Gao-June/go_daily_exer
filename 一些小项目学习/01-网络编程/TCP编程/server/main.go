@@ -42,12 +42,14 @@ func process(conn net.Conn) {
 
 // 主函数
 func main() {
+	// listen 监听
 	listen, err := net.Listen("tcp", "127.0.0.1:10010")
 	if err != nil {
 		fmt.Println("listen failed, err: ", err)
 		return
 	}
 
+	// 无限循环，在里面一直保持读取状态
 	for {
 		// 建立连接
 		conn, err := listen.Accept()
@@ -57,4 +59,5 @@ func main() {
 		}
 		go process(conn)
 	}
+
 }

@@ -27,10 +27,14 @@ func main() {
 	// 关闭连接
 	defer conn.Close()
 
+	// 从 os.Stdin里读取数据信息
 	inputReader := bufio.NewReader(os.Stdin)
 
 	for {
-		input, _ := inputReader.ReadString('\n') // 读取用户输入
+		// ReadString读取用户输入，直到读到 '\n'。出错的话返回 err，这里没写
+		input, _ := inputReader.ReadString('\n')
+
+		// 返回一个string切片，input以 "\r\n"进行切分
 		inputInfo := strings.Trim(input, "\r\n")
 
 		// 输入 Q 就退出
