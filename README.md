@@ -164,5 +164,5 @@
 >### 练习 goroutine
 >### 如果主协程退出了，其他任务还执行吗（代码测试）
 >### runtime.Gosched() 允许先运行其它 协程
->### runtime.Goexit()
+>### runtime.Goexit()  退出当前协程
 
