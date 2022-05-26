@@ -12,10 +12,10 @@
 </head>
 <body>
 <div style="width: 800px;height: 600px;margin: 30px auto;text-align: center">
-    <h1>www.GaoJune's ÑİÊ¾ÁÄÌìÊÒ</h1>
+    <h1>www.GaoJune's æ¼”ç¤ºèŠå¤©å®¤</h1>
     <div style="width: 800px;border: 1px solid gray;height: 300px;">
         <div style="width: 200px;height: 300px;float: left;text-align: left;">
-            <p><span>µ±Ç°ÔÚÏß:</span><span id="user_num">0</span></p>
+            <p><span>å½“å‰åœ¨çº¿:</span><span id="user_num">0</span></p>
             <div id="user_list" style="overflow: auto;">
             </div>
         </div>
@@ -24,15 +24,15 @@
     </div>
     <br>
     <textarea id="msg_box" rows="6" cols="50" onkeydown="confirm(event)"></textarea><br>
-    <input type="button" value="·¢ËÍ" onclick="send()">
+    <input type="button" value="å‘é€" onclick="send()">
 </div>
 </body>
 </html>
 <script type="text/javascript">
-    var uname = prompt('ÇëÊäÈëÓÃ»§Ãû', 'user' + uuid(8, 16));
+    var uname = prompt('è¯·è¾“å…¥ç”¨æˆ·å', 'user' + uuid(8, 16));
     var ws = new WebSocket("ws://10.16.48.232:8080/ws");
     ws.onopen = function () {
-        var data = "ÏµÍ³ÏûÏ¢£º½¨Á¢Á¬½Ó³É¹¦";
+        var data = "ç³»ç»Ÿæ¶ˆæ¯ï¼šå»ºç«‹è¿æ¥æˆåŠŸ";
         listMsg(data);
     };
     ws.onmessage = function (e) {
@@ -40,7 +40,7 @@
         var sender, user_name, name_list, change_type;
         switch (msg.type) {
             case 'system':
-                sender = 'ÏµÍ³ÏûÏ¢: ';
+                sender = 'ç³»ç»Ÿæ¶ˆæ¯: ';
                 break;
             case 'user':
                 sender = msg.from + ': ';
@@ -61,7 +61,7 @@
         listMsg(data);
     };
     ws.onerror = function () {
-        var data = "ÏµÍ³ÏûÏ¢ : ³ö´íÁË,ÇëÍË³öÖØÊÔ.";
+        var data = "ç³»ç»Ÿæ¶ˆæ¯ : å‡ºé”™äº†,è¯·é€€å‡ºé‡è¯•.";
         listMsg(data);
     };
     function confirm(event) {
@@ -101,8 +101,8 @@
         }
         user_num.innerHTML = name_list.length;
         user_list.scrollTop = user_list.scrollHeight;
-        var change = type == 'login' ? 'ÉÏÏß' : 'ÏÂÏß';
-        var data = 'ÏµÍ³ÏûÏ¢: ' + user_name + ' ÒÑ' + change;
+        var change = type == 'login' ? 'ä¸Šçº¿' : 'ä¸‹çº¿';
+        var data = 'ç³»ç»Ÿæ¶ˆæ¯: ' + user_name + ' å·²' + change;
         listMsg(data);
     }
     function sendMsg(msg) {
