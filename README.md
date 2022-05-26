@@ -169,3 +169,5 @@
 >### 练习使用 tuntime.GOMAXPROCS
 >### 无缓冲 chan
 >### 有缓冲 chan
+>### 这里写一个 goroutine 实例， 同时练习一下 chan
+		本质上是生产者消费者模型
