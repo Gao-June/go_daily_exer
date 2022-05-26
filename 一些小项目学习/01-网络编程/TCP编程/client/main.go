@@ -34,7 +34,7 @@ func main() {
 		// ReadString读取用户输入，直到读到 '\n'。出错的话返回 err，这里没写
 		input, _ := inputReader.ReadString('\n')
 
-		// 返回一个string切片，input以 "\r\n"进行切分
+		// 返回一个string切片，扇区input字符前后的  "\r\n"
 		inputInfo := strings.Trim(input, "\r\n")
 
 		// 输入 Q 就退出
