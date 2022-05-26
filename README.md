@@ -166,3 +166,4 @@
 >### runtime.Gosched() 允许先运行其它 协程
 >### runtime.Goexit()  退出当前协程
 >### runtime.Goexit()-2  再写一个退出当前协程
+>### 练习使用 tuntime.GOMAXPROCS
