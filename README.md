@@ -157,15 +157,15 @@
 >### 《项目》01 - 01 - 网络编程 TCP
 
 ## 2022.05.26
->### 练习使用 func() strings.Trim
->### 《项目》01 - 02 - 网络编程 UDP
->### 《项目》01 - 03 - http编程
->### 《项目》01 - 04 - socket编程
+>### 练习 func() strings.Trim
+>### 《项目》01-02 - 网络编程 UDP
+>### 《项目》01-03 - http编程
+>### 《项目》01-04 - socket编程
 >### 练习 goroutine
 >### 如果主协程退出了，其他任务还执行吗（代码测试）
->### runtime.Gosched() 允许先运行其它 协程
->### runtime.Goexit()  退出当前协程
->### runtime.Goexit()-2  再写一个退出当前协程
+>### runtime.Gosched()  允许先运行其它 协程
+>### runtime.Goexit()   退出当前协程
+>### runtime.Goexit()-2 再写一个退出当前协程
 >### 练习使用 tuntime.GOMAXPROCS
 >### 无缓冲 chan
 >### 有缓冲 chan
