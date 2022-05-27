@@ -167,10 +167,11 @@
 >### runtime.Goexit()   退出当前协程
 >### runtime.Goexit()-2 再写一个退出当前协程
 >### 练习使用 tuntime.GOMAXPROCS
->### 无缓冲 chan
+>### 无缓冲 chan 
 >### 有缓冲 chan
 >### 这里写一个 goroutine 实例， 同时练习一下 chan
 		本质上是生产者消费者模型
 ## 2022.05.27
 >###  练习使用 time 时间类型
 >###  爬虫测试，有点意思
+>### 《Gin框架》 初试
