@@ -176,3 +176,4 @@
 >###  爬虫测试，有点意思
 >### 《Gin框架》 初试
 >### 《Gin框架》 通过Context的Param方法来获取API参数
+>### 《Gin框架》 URL 参数可以通过 DefaultQuery() 或 Query() 方法获取
