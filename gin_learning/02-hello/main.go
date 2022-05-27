@@ -10,7 +10,7 @@ func main() {
 	// 创建 默认路由
 	r := gin.Default()
 
-	// 绑定路由规则，执行的函数
+	// 绑定路由规则，定义执行的函数
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "pong",

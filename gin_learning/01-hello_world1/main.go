@@ -14,7 +14,7 @@ func main() {
 	// 创建 默认路由
 	engine := gin.Default()
 
-	// 绑定路由规则，执行的函数
+	// 绑定路由规则，定义执行的函数
 	// gin.Context 封装了 request 和 response
 	engine.GET("/hello", func(context *gin.Context) {
 		fmt.Println("请求路径", context.FullPath())

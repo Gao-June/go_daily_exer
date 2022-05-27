@@ -22,7 +22,7 @@ func main() {
 	// 创建默认路由
 	r := gin.Default()
 
-	// 绑定路由规则
+	// 绑定路由规则，定义执行的函数
 	// 【注】 Param : 路由变量
 	r.GET("/user/:name/*action", func(c *gin.Context) {
 		name := c.Param("name")
