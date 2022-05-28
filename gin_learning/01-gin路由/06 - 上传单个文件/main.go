@@ -1,6 +1,6 @@
 /*
+上传单个文件
 	multipart/form-data 格式用于文件上传
-
 	gin文件上传与原生的 net/http 方法类似，不同在于gin把原生的request封装到c.Request中
 */
 
