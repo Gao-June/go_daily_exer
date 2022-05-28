@@ -174,6 +174,6 @@
 ## 2022.05.27
 >###  练习使用 time 时间类型
 >###  爬虫测试，有点意思
->### 《Gin框架》 初试
->### 《Gin框架》 通过Context的Param方法来获取API参数
->### 《Gin框架》 URL 参数可以通过 DefaultQuery() 或 Query() 方法获取
+>### 《Gin框架》 01 - gin路由 初试
+>### 《Gin框架》 01 - gin路由 通过Context的Param方法来获取API参数
+>### 《Gin框架》 01 - gin路由 URL 参数可以通过 DefaultQuery() 或 Query() 方法获取

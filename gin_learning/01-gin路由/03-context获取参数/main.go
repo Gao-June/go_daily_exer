@@ -28,7 +28,7 @@ func main() {
 		name := c.Param("name")
 		action := c.Param("action")
 
-		// 截取
+		// 截取， 对字符串进行处理
 		action = strings.Trim(action, "/")
 		c.String(http.StatusOK, name+"  is  "+action)
 	})
