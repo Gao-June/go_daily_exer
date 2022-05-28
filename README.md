@@ -174,11 +174,12 @@
 ## 2022.05.27
 >###  练习使用 time 时间类型
 >###  爬虫测试，有点意思
->### 《Gin框架》 01 - 01- gin路由 初试
->### 《Gin框架》 01 - 03 - gin路由 通过Context的Param方法来获取API参数
->### 《Gin框架》 01 - 04 - gin路由 URL 参数可以通过 DefaultQuery() 或 Query() 方法获取
->### 《Gin框架》 01 - 05 - gin路由 表单传输为 post 请求
->### 《Gin框架》 01 - 06 - gin路由 上传单个文件
->### 《Gin框架》 01 - 07 - gin路由 上传多个文件
->### 《Gin框架》 01 - 08 - gin路由 上routes group 管理一些相同的 URL
->### 《Gin框架》 01 - 09 - 路由拆分与注册 - 01 基本路由
+>### 《Gin框架》 01-gin路由 - 01-  初试
+>### 《Gin框架》 01-gin路由 - 03 - 通过Context的Param方法来获取API参数
+>### 《Gin框架》 01-gin路由 - 04 - URL 参数可以通过 DefaultQuery() 或 Query() 方法获取
+>### 《Gin框架》 01-gin路由 - 05 - 表单传输为 post 请求
+>### 《Gin框架》 01-gin路由 - 06 - 上传单个文件
+>### 《Gin框架》 01-gin路由 - 07 - 上传多个文件
+>### 《Gin框架》 01-gin路由 - 08 - 上routes group 管理一些相同的 URL
+>### 《Gin框架》 01-gin路由 - 09 - 路由拆分与注册
+>### 《Gin框架》 02-gin数据解析和绑定 - 01 Json 数据解析和绑定
